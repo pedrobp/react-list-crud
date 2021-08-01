@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useQuery, useMutation } from '@apollo/react-hooks';
 import { ALL_USERS_QUERY } from 'GraphQL/Queries';
-import { DELETE_USERS, RESET_USERS } from 'GraphQL/Mutations';
+import { DELETE_USERS } from 'GraphQL/Mutations';
 import { Redirect } from 'react-router-dom';
 import './user-list.css';
 import LoadingOverlay from 'react-loading-overlay';
