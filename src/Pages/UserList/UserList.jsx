@@ -17,7 +17,6 @@ const roleLabels = {
 const UserList = ({ handleSelectUser }) => {
   const { data } = useQuery(ALL_USERS_QUERY);
   const [deleteUsers] = useMutation(DELETE_USERS, { refetchQueries: [{ query: ALL_USERS_QUERY }] });
-  const [resetUsers] = useMutation(RESET_USERS, { refetchQueries: [{ query: ALL_USERS_QUERY }] });
 
   const [redirect, setRedirect] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
@@ -64,9 +63,6 @@ const UserList = ({ handleSelectUser }) => {
         <h1 className="page-name">Users</h1>
         <button className="delete-button" onClick={handleDelete}>
           Delete
-        </button>
-        <button className="delete-button" onClick={resetUsers}>
-          Reset
         </button>
       </div>
       <LoadingOverlay active={isLoading} className="loading" spinner text="Updating users...">

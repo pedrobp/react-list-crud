@@ -21,7 +21,6 @@ const client = new ApolloClient({
 
 const Root = () => {
   const [selectedUser, setSelectedUser] = useState({});
-  console.log(process.env.REACT_APP_GRAPHQL_ENDPOINT);
 
   return (
     <ApolloProvider client={client}>
