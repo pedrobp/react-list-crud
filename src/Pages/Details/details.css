@@ -1,0 +1,61 @@
+.save-button {
+  color: white;
+  border-radius: 4px;
+  border: solid 1px var(--blue);
+  background-color: var(--blue);
+  margin: 7px 0px;
+  padding: 0px 20px;
+  font-weight: bold;
+  min-height: 28px;
+}
+.save-button:hover {
+  opacity: 0.9;
+}
+
+.information {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.user-role,
+.user-name {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.user-name {
+  border-right: 1px solid #ddd;
+}
+
+.user-role {
+  padding-left: 20px;
+}
+
+.name-input {
+  width: 60%;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  line-height: 20px;
+}
+
+.radio-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: normal;
+  min-height: 25vh;
+}
+
+.name-input:focus {
+  outline: none;
+  box-shadow: 0px 0px 2px 2px #3b98fc;
+}
+
+input[type='radio'] {
+  margin-right: 10px;
+}

@@ -1,0 +1,56 @@
+.delete-button {
+  background-color: white;
+  border-radius: 4px;
+  border: solid 1px var(--red);
+  color: var(--red);
+  margin: 7px 0px;
+  padding: 0px 20px;
+  font-weight: bold;
+}
+
+.delete-button:hover {
+  background-color: #6d6d6d13;
+}
+
+.checkbox {
+  text-align: center;
+}
+
+.loading {
+  min-height: 60vh;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  color: var(--text-primary);
+}
+
+td,
+th {
+  padding: 12px;
+}
+
+th {
+  text-align: left;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+tr {
+  border-bottom: 1.5px solid #ddd;
+}
+
+tbody {
+  cursor: pointer;
+}
+
+tr:hover :not(th) {
+  background-color: #fafafa;
+}
+
+.checked,
+tr:hover .email {
+  color: #0070c9;
+}
