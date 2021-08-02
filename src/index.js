@@ -10,10 +10,12 @@ import UserList from 'Pages/UserList/UserList';
 
 const client = new ApolloClient({
   uri: process.env.REACT_APP_GRAPHQL_ENDPOINT,
+  // uri: env.GRAPHQL_ENDPOINT,
   request: (operation) => {
     operation.setContext({
       headers: {
         'x-api-key': process.env.REACT_APP_GRAPHQL_API_KEY,
+        // 'x-api-key': env.GRAPHQL_API_KEY,
       },
     });
   },
